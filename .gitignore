@@ -1,0 +1,9 @@
+*.pyc
+__pycache__/
+*.lean.olean
+*.lean.ilean
+build/
+lake-packages/
+*.pdf
+*.jpg
+*.png
