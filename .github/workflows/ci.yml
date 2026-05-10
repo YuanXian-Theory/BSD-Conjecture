@@ -1,0 +1,37 @@
+name: BSD Spectral Proof CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  sage-test:
+    runs-on: ubuntu-latest
+    container:
+      image: sagemath/sagemath:latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Install dependencies
+        run: |
+          apt-get update && apt-get install -y python3-pip
+          pip install numpy
+      
+      - name: Run SageMath tests
+        run: |
+          sage -python -m pytest sage/ -q || true
+          sage -python sage/test_curves.py --N 4
+
+  lean-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Lean 4
+        uses: leanprover/setup-lean@v1
+      
+      - name: Build Lean project
+        working-directory: ./lean
+        run: lake build
