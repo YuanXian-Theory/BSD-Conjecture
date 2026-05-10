@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Spectral Decision of the BSD Conjecture"
+type: article
+authors:
+  - family-names: "Acharya"
+    given-names: "Zhenyuan"
+    alias: "真圆阿奢黎"
+    affiliation: "Institute of Yuanxian Cosmology"
+    email: "shelizi2284@qq.com"
+    orcid: ""  # Add your ORCID if available
+title: "Spectral Decision of the BSD Conjecture: A Spectral-Geometric Proof via YuanXian Theory (YD-T64 & TCSC)"
+abstract: "We propose a novel spectral-geometric proof of the Birch and Swinnerton-Dyer conjecture by embedding elliptic curves into the YD-T64 complex geometric framework and constructing a self-adjoint elliptic operator whose zero eigenvalue multiplicity corresponds to both the algebraic and analytic ranks."
+keywords:
+  - BSD Conjecture
+  - Birch and Swinnerton-Dyer
+  - YuanXian Theory
+  - YD-T64
+  - TCSC
+  - Elliptic Curves
+  - Special Lagrangian Cycles
+  - Spectral Geometry
+  - SageMath
+  - Lean 4
+date-released: "2026-05-11"
+version: "1.0.0"
+repository-code: "https://github.com/YuanXian-Theory/BSD-Conjecture"
+repository-artifact: "https://github.com/YuanXian-Theory/BSD-Conjecture"
+license: "MIT"
+doi: ""  # Add DOI if you get one later (e.g. via Zenodo)
+references:
+  - type: article
+    authors:
+      - family-names: "Birch"
+        given-names: "B. J."
+      - family-names: "Swinnerton-Dyer"
+        given-names: "H. P. F."
+    title: "Notes on elliptic curves"
+    journal: "Journal für die reine und angewandte Mathematik"
+    year: 1965
+  - type: article
+    authors:
+      - family-names: "Acharya"
+        given-names: "Zhenyuan"
+    title: "True Complex Self-Consistency (TCSC) Axiom System"
+    year: 2026
+    repository: "https://zenodo.org"
