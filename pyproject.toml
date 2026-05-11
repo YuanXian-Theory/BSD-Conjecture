@@ -1,0 +1,27 @@
+[project]
+name = "yxt-bsd"
+version = "1.0.0"
+description = "Spectral Decision of the BSD Conjecture — Numerical & Formal Verification Package"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+  {name = "Zhenyuan Acharya", email = "shelizi2284@qq.com"},
+]
+keywords = ["bsd-conjecture", "elliptic-curves", "spectral-geometry", "yuanxian-theory", "t64"]
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "sage",
+]
+
+[project.optional-dependencies]
+dev = ["pytest", "matplotlib"]
+
+[project.urls]
+Homepage = "https://github.com/YuanXian-Theory/BSD-Conjecture"
+Repository = "https://github.com/YuanXian-Theory/BSD-Conjecture"
+Documentation = "https://github.com/YuanXian-Theory/BSD-Conjecture/blob/main/README.md"
+
+[tool.setuptools.packages.find]
+where = ["sage"]
+include = ["*"]
