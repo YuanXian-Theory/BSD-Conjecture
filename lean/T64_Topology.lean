@@ -4,13 +4,13 @@ import Mathlib.MeasureTheory.Measure.Lebesgue
 import Mathlib.Topology.Instances.Torus
 
 /-!
-# T⁶⁴ Compact Torus in YuanXian Theory
+# T⁶⁴ Topology Foundations in YuanXian Theory
 -/
 
 namespace YXT
 
 /-- The 64-dimensional compact torus T⁶⁴ -/
-class T64 (M : Type _) [TopologicalSpace M] where
+class T64_Topology (M : Type _) [TopologicalSpace M] where
   /-- Compactness of the manifold -/
   compactSpace : CompactSpace M
   /-- Finite volume (from compactness) -/
@@ -18,7 +18,7 @@ class T64 (M : Type _) [TopologicalSpace M] where
     apply CompactSpace.volume_lt_top
 
 /-- Fundamental group of T⁶⁴ is ℤ⁶⁴ -/
-theorem fundamental_group_T64 (M : Type _) [T64 M] :
+theorem fundamental_group_T64 (M : Type _) [T64_Topology M] :
     FundamentalGroup M ≃* ℤ ^ 64 := by
   -- T⁶⁴ ≃ (S¹)⁶⁴
   have h_product : FundamentalGroup (S¹ ^ 64) ≃* (FundamentalGroup S¹) ^ 64 := by
